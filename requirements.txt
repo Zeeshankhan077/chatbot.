@@ -1,0 +1,28 @@
+# Web Framework and Server
+Flask>=2.0.1
+Werkzeug>=2.0.1
+
+# API and HTTP
+requests>=2.26.0
+urllib3>=2.0.0
+
+# Environment Variables
+python-dotenv>=0.19.0
+
+# Machine Learning and Data Processing
+numpy>=2.0.0
+sentence-transformers>=2.5.1
+transformers>=4.38.2
+faiss-cpu>=1.7.4
+
+# Data Serialization
+pickle-mixin>=1.0.2
+
+# Development and Testing
+pytest>=8.0.2
+black>=24.2.0
+flake8>=7.0.0
+
+# Additional dependencies
+flask-limiter>=2.4.0
+gunicorn
