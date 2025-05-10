@@ -205,7 +205,7 @@ def handle_ratelimit_error(e):
     }), 429
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
+    port = int(os.environ.get("PORT", 10000))  # Default to 10000 for consistency
     logger.info(f"Starting Flask app on port {port}")
-    # For production, use: gunicorn app:app
+    # For production, use: gunicorn --bind 0.0.0.0:$PORT app:app
     app.run(host="0.0.0.0", port=port, debug=False)
