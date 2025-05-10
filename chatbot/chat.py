@@ -12,7 +12,6 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # Initialize Calendly client
 calendly_client = CalendlyClient()
 
-@lru_cache(maxsize=100)
 def calculate_lead_score(interest_level, budget_match, engagement_time, follow_up, offer_response, appointment, past_interactions):
     """Calculate a lead score based on weighted parameters."""
     score = (
